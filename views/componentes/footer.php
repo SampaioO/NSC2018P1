@@ -1,16 +1,4 @@
 <style type="text/css">
-	@media screen and (min-width: 768px) {
-		body { background: url('<?= RAIZSITE ?>/img/marcacao-fundo.jpg'); background-position: center center }
-	}
-
-	@font-face {
-        font-family:"Geared Slab";
-        src:url("<?= RAIZSITE ?>/fonts/GearedSlab-Bold.ttf");
-        src:url("<?= RAIZSITE ?>/fonts/GearedSlab-Extrabold.ttf");
-        src:url("<?= RAIZSITE ?>/fonts/GearedSlab-Light.ttf");
-        src:url("<?= RAIZSITE ?>/fonts/GearedSlab.ttf");
-    }
-
 	.row-alternativa { display: table; margin-left: 0; margin-right: 0; width: 100% }
 	.session-blocos-rodape .row-alternativa { position: absolute; margin-top: -265px }
 	.session-blocos-rodape .row-alternativa .col-primaria { background-color: #1e1e1e; height: 265px }
@@ -24,7 +12,7 @@
 
 	footer .bloco-logo,
 	footer .bloco-links,
-	footer .bloco-form { position: relative; height: 265px }
+	footer .bloco-form { position: relative }
 	footer .bloco-form { font-family: 'Open Sans', sans-serif }
 	footer .bloco-form p.chamada { color: #f8a41a; font-size: 10px; margin-top: 10px }
 	footer .bloco-form p.endereco { color: #acacac; font-size: 10px }
@@ -36,17 +24,37 @@
 	footer .bloco-form form button:focus,
 	footer .bloco-form form button:active:focus,
 	footer .bloco-form form button:hover { background-color: transparent; color: #ffffff; border-color: #f8a41a }
+
+	@media screen and (min-width: 768px) {
+		footer .bloco-logo,
+		footer .bloco-links,
+		footer .bloco-form { height: 265px }
+
+		footer .bloco-logo .logo,
+		footer .bloco-links .links,
+		footer .bloco-form .form { position: absolute; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%) }
+	}
+
+	@media screen and (max-width: 767px) {
+		footer { padding-top: 35px; padding-bottom: 35px }
+
+		footer { background-color: #171717 }
+
+		footer .bloco-links { line-height: 27px }
+		footer .bloco-form { margin-top: 35px }
+	}
 </style>
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs bloco-logo">
-				<div class="position-center-vertical">
-					<img src="<?= RAIZSITE ?>/img/marcacao-rodape-1.png" class="img-responsive"></div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 bloco-logo">
+				<div class="logo">
+					<img src="<?= RAIZSITE ?>/img/marcacao-rodape-1.png" class="img-responsive">
 				</div>
+			</div>
 			<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">&nbsp;</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs bloco-links">
-				<div class="position-center-vertical">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 bloco-links">
+				<div class="links">
 					<a href="" class="link-default">A Club</a><br>
 					<a href="" class="link-default">Motos</a><br>
 					<a href="" class="link-default">Blog</a><br>
@@ -55,8 +63,8 @@
 			</div>
 
 			<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">&nbsp;</div>
-			<div class="col-lg-5 col-md-5 col-sm-5 hidden-xs bloco-form">
-				<div class="position-center-vertical">
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 bloco-form">
+				<div class="form">
 					<form action="" class="form-horizontal" method="post">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Digite aqui seu e-mail...">
