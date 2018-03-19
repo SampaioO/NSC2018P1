@@ -1,8 +1,33 @@
 <style type="text/css">
 	.center { display: block !important; text-align: center !important; text-align: -webkit-center !important }
 
-	.titulo { font-family: 'Roboto', sans-serif; font-weight: 600; text-transform: uppercase; color: #000000; background-color: #ffbc1b; border-radius: 15px; font-size: 22px; padding-top: 10px; padding-bottom: 10px; margin-bottom: 30px }
+	.titulo { font-family: 'Roboto', sans-serif; font-weight: 600; text-transform: uppercase;  border-radius: 15px; font-size: 21px; padding-top: 10px; padding-bottom: 10px; margin-bottom: 30px }
+	.titulo.amarelo { color: #000000; background-color: #ffbc1b }
+	.titulo.preto { color: #f9a61a; background-color: #000000 }
+	.titulo hr { margin-top: 0; margin-bottom: 10px; border: 0; border-top: 3px solid #eee; width: 25% }
+</style>
+<div class="container" style="background-color: #ffffff">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="titulo preto center">1903 Motorcycle Apparel<hr></div>
+			
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>
 
+<style type="text/css">
 	.div-moto { margin-bottom: 60px }
 	.div-moto .moto-informacoes { margin-top: 12px; margin-bottom: 8px }
 	.div-moto .moto-informacoes p { font-family: 'Roboto', sans-serif; color: #58595b; margin: 0 }
@@ -20,7 +45,7 @@
 <div class="container" style="background-color: #ffffff">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<div class="titulo center">novidades na club</div>
+			<div class="titulo amarelo center">novidades na club</div>
 		</div>
 
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 div-moto">
