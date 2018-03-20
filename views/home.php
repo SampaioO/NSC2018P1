@@ -1,140 +1,35 @@
-<style type="text/css">
-	.menu-floater {
-		position: fixed;
-		z-index: 9999;
-		right: 0;
-		background-color: #313131;
-		top: 40%;
-		-webkit-transform: translateY( -40% );
-		-moz-transform: translateY( -40% );
-		transform: translateY( -40% );
-	}
-
-	.menu-floater > div {
-		height: 70px;
-	}
-
-	.menu-floater > div > img {
-		height: 30px;
-		margin: 10px;
-	}
-
-	.box-bar {
-		position: absolute;
-	    width: 1px;
-	    height: 50px;
-	    margin-top: 10px;
-	    border: 1px solid #fff;
-	}
-	
-	/*Classes para o funcionamento correto do menu lateral baseado em css*/
-	.ct-btn{
-		padding:0;
-		width: 70px;
-	}
-
-	.ct-btn .icon{
-		margin: 15px;
-		height: 37px;
-	}
-
-	.ct-content{
-		width: 0px;
-		height: 70px;
-		padding: 0;
-		transition: width .5s;
-	}
-
-	.css-transition:hover .ct-content{
-		padding: 0;
-		width:210px;
-		transition: width .5s;
-	}
-
-	.box-content{
-		width: 200px;
-		margin-top: 18px;
-		text-align: center;
-		line-height: 1;
-	}
-	.ct-title{
-		margin: 0;
-	}
-	.ct-small-height{
-		height:50px
-	}
-    .ct-first-item{
-		margin-top: 75px;
-	}
-	.ct-seccond-item{
-		margin-top: 150px;
-	}
-	.ct-third-item{
-		margin-top: 225px
-	}
-	.ct-social-icons{
-		height: 43px;
-	}
-</style>
-
-<div class="menu-floater hidden-sm hidden-xs css-transition">
-	<div class="box-whats" style="">
-		<div class="col-lg-3 col-md-3 ct-btn">
-			<img src="<?= RAIZSITE ?>/img/spotIcon.png" class="icone-whats icon">
-		</div>
-		<div class="col-lg-9 col-md-9 div-box-content-whats ct-content">
-			<div class="box-bar"></div>
-			<div class="" style="">
-                <a href="https://open.spotify.com/user/nenomachado/playlist/4uie6iLfLLSNKbNavLMoGr" target="_blank"><img class="spot-img" src="<?= RAIZSITE ?>/img/acelere-club1.png"></a>
-			</div>
+<div class="container">
+	<div class="row">
+		<div class="owl-carousel owl-theme" id="slideHome">
+	        <div class="item">
+	            <div class="bg-carousel" style="height: 500px; background: url('http://www.club1903motorcycles.com.br/cms/uploads/slider-fachada-desktop.jpg'); background-position: center center">
+	                <div class="container">
+	                </div>
+	            </div>
+	        </div>
 		</div>
 	</div>
 </div>
 
-<div class="menu-floater hidden-sm hidden-xs css-transition ct-first-item">
-	<div class="box-whats" style="">
-		<div class="col-lg-3 col-md-3 ct-btn">
-			<img src="<?= RAIZSITE ?>/img/whats.png" class="icone-whats icon">
-		</div>
-		<div class="col-lg-9 col-md-9 div-box-content-whats ct-content">
-			<div class="box-bar"></div>
-			<div class="box-content" style="">
-				<p class="Roboto Branco-Fonte size12 ct-title">Whatsapp</p>
-				<a class="reseta-link" href="tel:99953 3155"><p class="size25 Roboto Extra-Bold Laranja-Fonte"><font class="Laranja-Fonte size12 ct-small-height">41</font> 99953-3155</p></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="menu-floater hidden-sm hidden-xs css-transition ct-seccond-item">
-	<div class="box-social">
-		<div class="col-lg-3 col-md-3 ct-btn">
-			<img src="<?= RAIZSITE ?>/img/share.png" class="icone-social icon">
-		</div>
-		<div class="col-lg-9 col-md-9 div-box-content-social ct-content">
-			<div class="box-bar"></div>
-			<div class="box-content">
-				<p class="Roboto Branco-Fonte size12 ct-title">Siga-nos nas redes sociais</p>
-				<a href="<?= $config->facebook ?>" target="_blank"><img src="<?= RAIZSITE ?>/img/facebook-icon.png" class="ct-social-icons"></a><a href="https://www.youtube.com/channel/UCMgijWrIdDFZQcQssR-xfAw" target="_blank"><img src="<?= RAIZSITE ?>/img/youtube-icon.png" class="ct-social-icons"></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="menu-floater hidden-sm hidden-xs css-transition ct-third-item">
-	<div class="box-calendario">
-		<div class="col-lg-3 col-md-3 ct-btn">
-			<img src="<?= RAIZSITE ?>/img/calendar-icon.png" class="icone-calendario icon">
-		</div>
-		<div class="col-lg-9 col-md-9 div-box-content-calendario ct-content">
-			<div class="box-bar"></div>
-			<div class="box-content">
-				<p class="size25 Roboto Extra-Bold Laranja-Fonte ct-title">EVENTOS</p>
-				<p class="Roboto Branco-Fonte size12 ct-title">Confira a agenda</p>
-			</div>
-		</div>
-	</div>
-</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slideHome').owlCarousel({
+    	    loop: true,
+    	    dots: false,
+            nav: false,
+    	    items: 1,
+    	    autoplay: true
+    	});
+        
+        $('#slidesMobile').owlCarousel({
+    	    loop: true,
+    	    dots: false,
+            nav: false,
+    	    items: 1,
+    	    autoplay: true
+    	});
+    });
+</script>
 
 <div class="container" style="background-color: #ffffff">
 	<div class="row" style="margin-top: 50px; margin-bottom: 50px">
