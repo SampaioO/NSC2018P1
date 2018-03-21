@@ -1,4 +1,107 @@
 <style type="text/css">
+    .menu-floater {
+        position: fixed;
+        z-index: 9999;
+        right: 0;
+        background-color: #313131;
+        top: 40%;
+        -webkit-transform: translateY( -40% );
+        -moz-transform: translateY( -40% );
+        transform: translateY( -40% );
+    }
+
+    .menu-floater > div {
+        height: 70px;
+    }
+
+    .menu-floater > div > img {
+        height: 30px;
+        margin: 10px;
+    }
+
+    .box-bar {
+        position: absolute;
+        width: 1px;
+        height: 50px;
+        margin-top: 10px;
+        border: 1px solid #fff;
+    }
+    
+    /* Classes para o funcionamento correto do menu lateral baseado em css */
+    .ct-btn { padding: 0 !important; width: 70px !important }
+    .ct-btn .icon { margin: 15px !important; height: 37px !important }
+
+    .ct-content { width: 0px !important; height: 70px !important; padding: 0 !important; transition: width .5s }
+    .css-transition:hover .ct-content{ padding: 0 !important; width: 210px !important; transition: width .5s }
+
+    .box-content { width: 200px !important; margin-top: 18px !important; text-align: center !important; line-height: 1 }
+    .ct-title { margin: 0 !important }
+    .ct-small-height { height: 50px !important }
+    .ct-first-item { margin-top: 75px !important }
+    .ct-seccond-item { margin-top: 150px !important }
+    .ct-third-item { margin-top: 225px !important }
+    .ct-social-icons { height: 43px !important }
+</style>
+<div class="menu-floater hidden-xs css-transition">
+    <div class="box-whats" style="">
+        <div class="col-lg-3 col-md-3 col-sm-3 ct-btn">
+            <img src="<?= RAIZSITE ?>/img/spotIcon.png" class="icone-whats icon">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 div-box-content-whats ct-content">
+            <div class="box-bar"></div>
+            <div class="box-content" style="">
+                <a href="https://open.spotify.com/user/nenomachado/playlist/4uie6iLfLLSNKbNavLMoGr" target="_blank"><img class="spot-img" src="<?= RAIZSITE ?>/img/acelere-club1.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu-floater hidden-xs css-transition ct-first-item">
+    <div class="box-whats" style="">
+        <div class="col-lg-3 col-md-3 col-sm-3 ct-btn">
+            <img src="<?= RAIZSITE ?>/img/whats.png" class="icone-whats icon">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 div-box-content-whats ct-content">
+            <div class="box-bar"></div>
+            <div class="box-content" style="">
+                <p class="ct-title" style="font-family: 'Roboto', sans-serif; color: #ffffff; font-weight: 600; font-size: 12px">Whatsapp</p>
+                <a class="reseta-link" href="tel:99953 3155" style="font-family: 'Roboto', sans-serif"><p style="color: #ffbc1b; font-weight: 600; font-size: 25px"><font class="ct-small-height" style="color: #ffbc1b; font-size: 12px">41</font> 99953-3155</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu-floater hidden-xs css-transition ct-seccond-item">
+    <div class="box-social">
+        <div class="col-lg-3 col-md-3 col-sm-3 ct-btn">
+            <img src="<?= RAIZSITE ?>/img/share.png" class="icone-social icon">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 div-box-content-social ct-content">
+            <div class="box-bar"></div>
+            <div class="box-content">
+                <p class="ct-title" style="font-family: 'Roboto', sans-serif; color: #ffffff; font-weight: 600; font-size: 12px">Siga-nos nas redes sociais</p>
+                <a href="<?= $config->facebook ?>" target="_blank"><img src="<?= RAIZSITE ?>/img/facebook-icon.png" class="ct-social-icons"></a><a href="https://www.youtube.com/channel/UCMgijWrIdDFZQcQssR-xfAw" target="_blank"><img src="<?= RAIZSITE ?>/img/youtube-icon.png" class="ct-social-icons"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu-floater hidden-xs css-transition ct-third-item">
+    <div class="box-calendario">
+        <div class="col-lg-3 col-md-3 col-sm-3 ct-btn">
+            <img src="<?= RAIZSITE ?>/img/calendar-icon.png" class="icone-calendario icon">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 div-box-content-calendario ct-content">
+            <div class="box-bar"></div>
+            <div class="box-content">
+                <p class="ct-title" style="font-family: 'Roboto', sans-serif; color: #ffbc1b; font-weight: 600; font-size: 25px">EVENTOS</p>
+                <p class="ct-title" style="font-family: 'Roboto', sans-serif; color: #ffffff; font-weight: 600; font-size: 12px">Confira a agenda</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
 	@media screen and (min-width: 768px) {
 		body { background: url('<?= RAIZSITE ?>/img/marcacao-fundo.jpg'); background-position: center center }
 	}

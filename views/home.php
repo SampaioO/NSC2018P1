@@ -31,6 +31,9 @@
     });
 </script>
 
+<style type="text/css">
+	
+</style>
 <div class="container" style="background-color: #ffffff">
 	<div class="row" style="margin-top: 50px; margin-bottom: 50px">
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -54,27 +57,54 @@
 	.titulo.amarelo { color: #000000; background-color: #ffbc1b }
 	.titulo.preto { color: #f9a61a; background-color: #000000 }
 	.titulo hr { margin-top: 0; margin-bottom: 10px; border: 0; border-top: 3px solid #eee; width: 25% }
+
+	.tiles { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
+	.tile { position: relative; float: left; height: 100%; overflow: hidden; width: 100% }
+	.photo { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center !important; background-size: 85% !important; background-repeat: no-repeat !important; transition: transform .5s ease-out }
 </style>
-<div class="container" style="background-color: #ffffff">
+<div class="container" style="background-color: #ffffff; padding-bottom: 50px">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="titulo preto center">1903 Motorcycle Apparel<hr></div>
 
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
+				<div class="tiles">
+					<div class="tile" data-scale="1.1">
+						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-				<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
+				<div class="tiles">
+					<div class="tile" data-scale="1.1">
+						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
+					</div>
+				</div>
+			</div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
+				<div class="tiles">
+					<div class="tile" data-scale="1.1">
+						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
+					</div>
+				</div>
+			</div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
+				<div class="tiles">
+					<div class="tile" data-scale="1.1">
+						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$('.tile').on('mouseover', function(){
+		$(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    }).on('mouseout', function(){
+		$(this).children('.photo').css({'transform': 'scale(1)'});
+    }).on('mousemove', function(e){
+		$(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+</script>
 
 <style type="text/css">
 	.div-moto { margin-bottom: 60px }
