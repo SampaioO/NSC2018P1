@@ -1,8 +1,17 @@
-<div class="container">
+<style type="text/css">
+	@media screen and (min-width: 768px) {
+		.bg-carousel { height: 500px }
+	}
+	@media screen and (max-width: 767px) {
+		.session-banner { padding-left: 15px !important; padding-right: 15px !important }
+		.bg-carousel { height: 250px; background-size: cover !important }
+	}
+</style>
+<div class="container session-banner">
 	<div class="row">
 		<div class="owl-carousel owl-theme" id="slideHome">
 	        <div class="item">
-	            <div class="bg-carousel" style="height: 500px; background: url('http://www.club1903motorcycles.com.br/cms/uploads/slider-fachada-desktop.jpg'); background-position: center center">
+	            <div class="bg-carousel" style="background: url('http://www.club1903motorcycles.com.br/cms/uploads/slider-fachada-desktop.jpg'); background-position: center center">
 	                <div class="container">
 	                </div>
 	            </div>
@@ -10,7 +19,6 @@
 		</div>
 	</div>
 </div>
-
 <script type="text/javascript">
     $(document).ready(function() {
         $('#slideHome').owlCarousel({
@@ -32,19 +40,22 @@
 </script>
 
 <style type="text/css">
-	
+	@media screen and (max-width: 767px) {
+		.div-promocao { margin-bottom: 25px }
+		.div-promocao:last-child { margin-bottom: 0 }
+	}
 </style>
 <div class="container" style="background-color: #ffffff">
 	<div class="row" style="margin-top: 50px; margin-bottom: 50px">
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div-promocao">
 			<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
 		</div>
 
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div-promocao">
 			<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
 		</div>
 
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div-promocao">
 			<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
 		</div>
 	</div>
@@ -71,7 +82,7 @@
 		.apparel-border { min-height: 600px }
 	}
 </style>
-<div class="container" style="background-color: #ffffff; padding-bottom: 50px; position: relative;">
+<div class="container hidden-xs" style="background-color: #ffffff; padding-bottom: 50px; position: relative;">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="titulo preto center">1903 Motorcycle Apparel<hr></div>
@@ -120,7 +131,6 @@
 </script>
 
 <style type="text/css">
-	.div-moto { margin-bottom: 60px }
 	.div-moto .moto-informacoes { margin-top: 12px; margin-bottom: 8px }
 	.div-moto .moto-informacoes p { font-family: 'Roboto', sans-serif; color: #58595b; margin: 0 }
 	.div-moto .moto-informacoes p.valor { font-weight: 500 }
@@ -141,6 +151,7 @@
 
 	@media screen and (min-width: 768px) {
 		.img-moto { position: relative }
+		.div-moto { margin-bottom: 60px }
 		.div-moto .camada { -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
 		.div-moto .camada { opacity: 0 }
 		.div-moto:hover .camada { opacity: 0.3 }
@@ -150,9 +161,17 @@
 		.div-moto .img-moto { height: 156px }
 		a.btn-detalhes { width: 180px }
 	}
+
+	@media screen and (max-width: 767px) {
+		.div-moto { margin-bottom: 25px }
+		.div-moto:last-child { margin-bottom: 0px }
+		.img-moto { height: 240px }
+
+		.row-motos-destaque { margin-bottom: 50px }
+	}
 </style>
 <div class="container" style="background-color: #ffffff; position: relative; z-index: 1">
-	<div class="row">
+	<div class="row row-motos-destaque">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="titulo amarelo center">novidades na club</div>
 		</div>
@@ -160,7 +179,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
@@ -175,7 +194,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
@@ -190,7 +209,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
@@ -205,7 +224,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
@@ -221,7 +240,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
@@ -236,7 +255,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
@@ -251,7 +270,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
@@ -266,7 +285,7 @@
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
 				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
-					<div class="camada" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
+					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
 				<div class="moto-informacoes center">
