@@ -102,10 +102,6 @@
 </div>
 
 <style type="text/css">
-	@media screen and (min-width: 768px) {
-		body { background: url('<?= RAIZSITE ?>/img/marcacao-fundo.jpg'); background-position: center center }
-	}
-
 	@font-face {
         font-family:"Geared Slab";
         src:url("<?= RAIZSITE ?>/fonts/GearedSlab-Bold.ttf");

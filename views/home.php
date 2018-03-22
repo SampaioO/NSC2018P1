@@ -61,8 +61,17 @@
 	.tiles { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
 	.tile { position: relative; float: left; height: 100%; overflow: hidden; width: 100% }
 	.photo { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center !important; background-size: 85% !important; background-repeat: no-repeat !important; transition: transform .5s ease-out }
+
+	.apparel-border { transition: transform .5s ease-out }
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		.apparel-border { min-height: 500px }
+	}
+
+	@media screen and (min-width: 992px) {
+		.apparel-border { min-height: 600px }
+	}
 </style>
-<div class="container" style="background-color: #ffffff; padding-bottom: 50px">
+<div class="container" style="background-color: #ffffff; padding-bottom: 50px; position: relative;">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="titulo preto center">1903 Motorcycle Apparel<hr></div>
@@ -80,19 +89,23 @@
 						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
 					</div>
 				</div>
-			</div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
-				<div class="tiles">
-					<div class="tile" data-scale="1.1">
-						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
-					</div>
-				</div>
-			</div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
 				<div class="tiles">
 					<div class="tile" data-scale="1.1">
 						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
+				<div class="tiles">
+					<div class="tile" data-scale="1.1">
+						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="apparel-border hidden-xs" style="border: 1px solid #d9d9d9; border-radius: 15px; width: 100%; margin-top: -94px"></div>
 		</div>
 	</div>
 </div>
@@ -138,7 +151,7 @@
 		a.btn-detalhes { width: 180px }
 	}
 </style>
-<div class="container" style="background-color: #ffffff">
+<div class="container" style="background-color: #ffffff; position: relative; z-index: 1">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="titulo amarelo center">novidades na club</div>

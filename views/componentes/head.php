@@ -31,4 +31,5 @@
 		ScriptLoader::LoadPLUGINSJS('jquery-3.2.1.min.js');
 	?>
 </head>
-<body>
+<body style="position: relative; background: #dcdcdc">
+	<img src="<?= RAIZSITE ?>/img/background.png" style="position: absolute; bottom: 250px; left: 0; width: 100%" class="hidden-xs">
