@@ -8,23 +8,23 @@
     }
 
     .menu-floater { position: fixed; z-index: 9999; right: 0; background-color: #313131; top: 40%; -webkit-transform: translateY( -40% ); -moz-transform: translateY( -40% ); transform: translateY( -40% ) }
-    .menu-floater > div { height: 70px }
+    .menu-floater > div { height: 60px }
     .menu-floater > div > img { height: 30px; margin: 10px }
-    .box-bar { position: absolute; width: 1px; height: 50px; margin-top: 10px; border: 1px solid #fff }
+    .box-bar { position: absolute; width: 1px; height: 60px; margin-top: 0px; border: 1px solid #fff }
     
     /* Classes para o funcionamento correto do menu lateral baseado em css */
-    .ct-btn { padding: 0 !important; width: 70px !important }
-    .ct-btn .icon { margin: 15px !important; height: 37px !important }
+    .ct-btn { padding: 0 !important; width: 60px !important }
+    .ct-btn .icon { margin: 15px !important; height: 30px !important }
 
-    .ct-content { width: 0px !important; height: 70px !important; padding: 0 !important; transition: width .5s }
+    .ct-content { width: 0px !important; height: 60px !important; padding: 0 !important; transition: width .5s }
     .css-transition:hover .ct-content{ padding: 0 !important; width: 210px !important; transition: width .5s }
 
-    .box-content { width: 200px !important; margin-top: 18px !important; text-align: center !important; line-height: 1 }
+    .box-content { width: 200px !important; margin-top: 10px !important; text-align: center !important; line-height: 1 }
     .ct-title { margin: 0 !important }
     .ct-small-height { height: 50px !important }
-    .ct-first-item { margin-top: 75px !important }
-    .ct-seccond-item { margin-top: 150px !important }
-    .ct-third-item { margin-top: 225px !important }
+    .ct-first-item { margin-top: 70px !important }
+    .ct-seccond-item { margin-top: 140px !important }
+    .ct-third-item { margin-top: 210px !important }
     .ct-social-icons { height: 43px !important }
 
     @media screen and (max-width: 1199px) {

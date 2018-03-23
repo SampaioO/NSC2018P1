@@ -69,43 +69,93 @@
 	.tile { position: relative; float: left; height: 100%; overflow: hidden; width: 100% }
 	.photo { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center !important; background-size: 85% !important; background-repeat: no-repeat !important; transition: transform .5s ease-out }
 
+	a.btn-apparel-detalhes { font-family: 'Roboto', sans-serif; font-weight: 500 !important; text-transform: uppercase; border-radius: 0 !important; font-size: 10px !important ; margin-left: auto; margin-right: auto; width: 80%; margin-top: 10px }
+	a.btn-apparel-detalhes { background-color: #ffbc1b; color: #000000; border-color: #ffbc1b; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
+	a.btn-apparel-detalhes:hover,
+	a.btn-apparel-detalhes:focus,
+	a.btn-apparel-detalhes:active:hover { background-color: transparent; color: #000000; border-color: #000000 }
+
 	.apparel-border { transition: transform .5s ease-out }
 	@media screen and (min-width: 768px) and (max-width: 991px) {
-		.apparel-border { min-height: 500px }
+		.apparel-border { min-height: 570px; margin-top: -72.6% }
 	}
 
-	@media screen and (min-width: 992px) {
-		.apparel-border { min-height: 600px }
+	@media screen and (min-width: 992px) and (max-width: 1199px) {
+		.apparel-border { min-height: 570px; margin-top: -56.3% }
+	}
+
+	@media screen and (min-width: 768px) {
+		.item img { height: 220px; width: auto !important; }
+	}
+
+	@media screen and (min-width: 1200px) {
+		.apparel-border { min-height: 570px; margin-top: -55.4% }
 	}
 </style>
-<div class="container hidden-xs" style="background-color: #ffffff; padding-bottom: 50px; position: relative;">
+<div class="container" style="background-color: #ffffff; padding-bottom: 50px; position: relative;">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="titulo preto center">1903 Motorcycle Apparel<hr></div>
 
 			<div class="owl-carousel owl-theme" id="slideApparel">
-		        <div class="item">
-					<a href="">
-						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
-					</a>
+		        <div class="item text-center">
+					<center><img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive"></center>
+
+					<div class="detalhes" style="font-family: 'Roboto', sans-serif; color: #000000">
+						<h4 style="font-size: 18px; font-weight: 200">Roda de exercício Vollo Vp 1010 - Vollo Sports</h4>
+						<p style="margin: 0px; font-size: 18px; font-weight: 600">R$ 89,90</p>
+						<span style="font-size: 15px">até 3x de R$29,67 sem juros</span>
+
+						<p style="margin-bottom: 0px; margin-top: 10px; font-size: 26px; font-weight: 600">R$ 80,10</p>
+						<span style="font-size: 15px">pgto. a vista</span>
+					</div>
+
+					<a role="button" class="btn btn-apparel-detalhes">VER DETALHES</a>
 				</div>
-				<div class="item">
-					<a href="">
-						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
-					</a>
+				<div class="item text-center">
+					<center><img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive"></center>
+
+					<div class="detalhes" style="font-family: 'Roboto', sans-serif; color: #000000">
+						<h4 style="font-size: 18px; font-weight: 200">Roda de exercício Vollo Vp 1010 - Vollo Sports</h4>
+						<p style="margin: 0px; font-size: 18px; font-weight: 600">R$ 89,90</p>
+						<span style="font-size: 15px">até 3x de R$29,67 sem juros</span>
+
+						<p style="margin-bottom: 0px; margin-top: 10px; font-size: 26px; font-weight: 600">R$ 80,10</p>
+						<span style="font-size: 15px">pgto. a vista</span>
+					</div>
+
+					<a role="button" class="btn btn-apparel-detalhes">VER DETALHES</a>
 				</div>
-				<div class="item">
-					<a href="">
-						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
-					</a>
+				<div class="item text-center">
+					<center><img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive"></center>
+
+					<div class="detalhes" style="font-family: 'Roboto', sans-serif; color: #000000">
+						<h4 style="font-size: 18px; font-weight: 200">Roda de exercício Vollo Vp 1010 - Vollo Sports</h4>
+						<p style="margin: 0px; font-size: 18px; font-weight: 600">R$ 89,90</p>
+						<span style="font-size: 15px">até 3x de R$29,67 sem juros</span>
+
+						<p style="margin-bottom: 0px; margin-top: 10px; font-size: 26px; font-weight: 600">R$ 80,10</p>
+						<span style="font-size: 15px">pgto. a vista</span>
+					</div>
+
+					<a role="button" class="btn btn-apparel-detalhes">VER DETALHES</a>
 				</div>
-				<div class="item">
-					<a href="">
-						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
-					</a>
+				<div class="item text-center">
+					<center><img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive"></center>
+
+					<div class="detalhes" style="font-family: 'Roboto', sans-serif; color: #000000">
+						<h4 style="font-size: 18px; font-weight: 200">Roda de exercício Vollo Vp 1010 - Vollo Sports</h4>
+						<p style="margin: 0px; font-size: 18px; font-weight: 600">R$ 89,90</p>
+						<span style="font-size: 15px">até 3x de R$29,67 sem juros</span>
+
+						<p style="margin-bottom: 0px; margin-top: 10px; font-size: 26px; font-weight: 600">R$ 80,10</p>
+						<span style="font-size: 15px">pgto. a vista</span>
+					</div>
+
+					<a role="button" class="btn btn-apparel-detalhes">VER DETALHES</a>
 				</div>
 			</div>
-			<div class="apparel-border hidden-xs" style="border: 1px solid #d9d9d9; border-radius: 15px; width: 100%; margin-top: -94px"></div>
+			<div class="apparel-border hidden-xs" style="border: 1px solid #d9d9d9; border-radius: 15px; width: 100%"></div>
 		</div>
 	</div>
 </div>
