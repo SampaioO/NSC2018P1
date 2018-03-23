@@ -62,8 +62,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">&nbsp;</div>
-			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 bloco-form">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bloco-form">
 				<div class="form">
 					<form action="" class="form-horizontal" method="post">
 						<div class="input-group">
@@ -74,8 +73,8 @@
 						</div>
 					</form>
 					<p class="chamada">Esteja atualizado sobre os novos produtos, lançamentos, promoções e muito mais!</p>
-					<p class="endereco"><strong>Alto da XV:</strong> RUA DIAS DA ROCHA FILHO 79, ESQUINA COM A SETE DE ABRIL | CURITIBA | PARANÁ | 41 3029 0095 | 41 3057 1782</p>
-					<p class="endereco"><strong>Distrito 1340:</strong> RUA MAJOR HEITOR GUIMARÃES, 1130 - SEMINÁRIO | CURITIBA | PARANÁ | 41 3057 1782</p>
+					<p class="endereco"><strong>Alto da XV:</strong> Rua Dias da Rocha Filho 79, esquina com a Sete de Abril<br>Curitiba | Paraná | 41 3029 0095 | 41 3057 1782</p>
+					<p class="endereco"><strong>Distrito 1340:</strong> Rua Major Heitor Guimarães, 1130 - Seminário<br>Curitiba | Paraná | 41 3057 1782</p>
 				</div>
 			</div>
 		</div>

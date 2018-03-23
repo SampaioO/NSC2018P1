@@ -28,14 +28,6 @@
     	    items: 1,
     	    autoplay: true
     	});
-        
-        $('#slidesMobile').owlCarousel({
-    	    loop: true,
-    	    dots: false,
-            nav: false,
-    	    items: 1,
-    	    autoplay: true
-    	});
     });
 </script>
 
@@ -48,15 +40,19 @@
 <div class="container" style="background-color: #ffffff">
 	<div class="row" style="margin-top: 50px; margin-bottom: 50px">
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div-promocao">
-			<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
+			<a href="">
+				<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
+			</a>
 		</div>
-
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div-promocao">
-			<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
+			<a href="">
+				<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
+			</a>
 		</div>
-
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div-promocao">
-			<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
+			<a href="">
+				<img src="<?= RAIZSITE ?>/img/marcacao-promocao.png" class="img-responsive">
+			</a>
 		</div>
 	</div>
 </div>
@@ -87,40 +83,61 @@
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="titulo preto center">1903 Motorcycle Apparel<hr></div>
 
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
-				<div class="tiles">
-					<div class="tile" data-scale="1.1">
-						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
-					</div>
+			<div class="owl-carousel owl-theme" id="slideApparel">
+		        <div class="item">
+					<a href="">
+						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+					</a>
+				</div>
+				<div class="item">
+					<a href="">
+						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+					</a>
+				</div>
+				<div class="item">
+					<a href="">
+						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+					</a>
+				</div>
+				<div class="item">
+					<a href="">
+						<img src="<?= RAIZSITE ?>/img/marcacao-camiseta.png" class="img-responsive">
+					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
-				<div class="tiles">
-					<div class="tile" data-scale="1.1">
-						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
-				<div class="tiles">
-					<div class="tile" data-scale="1.1">
-						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 229px">
-				<div class="tiles">
-					<div class="tile" data-scale="1.1">
-						<div class="photo" style="background: url('<?= RAIZSITE ?>/img/marcacao-camiseta.png')"></div>
-					</div>
-				</div>
-			</div>
-
 			<div class="apparel-border hidden-xs" style="border: 1px solid #d9d9d9; border-radius: 15px; width: 100%; margin-top: -94px"></div>
 		</div>
 	</div>
 </div>
 <script type="text/javascript">
+	$(document).ready(function() {
+        $('#slideApparel').owlCarousel({
+    	    loop: true,
+    	    dots: false,
+            nav: false,
+    	    autoplay: true,
+    	    responsiveClass:true,
+    	    responsive:{
+		        0:{
+		            items:1,
+		            nav:false
+		        },
+		        600:{
+		            items:2,
+		            nav:false
+		        },
+		        768:{
+		            items:3,
+		            nav:false
+		        },
+		        992:{
+		            items:4,
+		            nav:false
+		        }
+		    }
+    	});
+    });
+
 	$('.tile').on('mouseover', function(){
 		$(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
     }).on('mouseout', function(){
@@ -142,7 +159,7 @@
 	a.btn-detalhes { background-color: #ffbc1b; color: #000000; border-color: #ffbc1b; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
 	a.btn-detalhes:hover,
 	a.btn-detalhes:focus,
-	a.btn-detalhes:active:hover { background-color: transparent; color: #ffbc1b; border-color: #ffbc1b }
+	a.btn-detalhes:active:hover { background-color: transparent; color: #000000; border-color: #000000 }
 
 	@media screen and (min-width: 768px) and (max-width: 991px) {
 		.div-moto .img-moto { height: 115px }
@@ -150,12 +167,12 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		.img-moto { position: relative }
+		.img-moto { position: relative; background-size: 100% !important }
 		.div-moto { margin-bottom: 60px }
 		.div-moto .camada { -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
 		.div-moto .camada { opacity: 0 }
 		.div-moto:hover .camada { opacity: 0.3 }
-		.div-moto:hover a.btn-detalhes { background-color: transparent; color: #ffbc1b; border-color: #ffbc1b }
+		.div-moto:hover a.btn-detalhes { background-color: transparent; color: #000000; border-color: #000000 }
 	}
 	@media screen and (min-width: 992px) {
 		.div-moto .img-moto { height: 156px }
@@ -165,7 +182,7 @@
 	@media screen and (max-width: 767px) {
 		.div-moto { margin-bottom: 25px }
 		.div-moto:last-child { margin-bottom: 0px }
-		.img-moto { height: 240px }
+		.img-moto { height: 240px; background-size: cover !important; background-position: center center !important }
 
 		.row-motos-destaque { margin-bottom: 50px }
 	}
@@ -178,7 +195,7 @@
 
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
@@ -193,7 +210,7 @@
 		</a>
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
@@ -208,7 +225,7 @@
 		</a>
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
@@ -223,7 +240,7 @@
 		</a>
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
@@ -239,7 +256,7 @@
 
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
@@ -254,7 +271,7 @@
 		</a>
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
@@ -269,7 +286,7 @@
 		</a>
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
@@ -284,7 +301,7 @@
 		</a>
 		<a href="">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 div-moto">
-				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px; background-size: 100%">
+				<div class="img-moto" style="background: url('<?= RAIZSITE ?>/img/marcacao-moto.png'); width: 100%; border-radius: 15px">
 					<div class="camada hidden-xs" style="height: 100%; width: 100%; position: absolute; top: 0; background-color: #000000; border-radius: 15px"></div>
 				</div>
 
