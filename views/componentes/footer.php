@@ -49,7 +49,11 @@
 		<div class="row">
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 bloco-logo">
 				<div class="logo">
+					<?php if($pagina_atual == "home") { ?>
 					<img src="<?= RAIZSITE ?>/img/marcacao-rodape-1.png" class="img-responsive">
+					<?php } else { ?>
+					<img src="<?= RAIZSITE ?>/img/marcacao-rodape-alternativa.png" class="img-responsive">
+					<?php } ?>
 				</div>
 			</div>
 			<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">&nbsp;</div>
