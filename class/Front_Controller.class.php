@@ -7,7 +7,7 @@
     {
         private static $_routes = array(
             ''=>array('layout'=>'default','view'=>'home'),
-            'a-club'=>array('layout'=>'default','view'=>'a-club')
+            'harley-davidson-curitiba'=>array('layout'=>'default','view'=>'harley-davidson-curitiba')
         ); //array com todas as rotas disponiveis
         private static $_pagina; //pagina requisitada
         private static $_parametros;

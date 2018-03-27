@@ -1,3 +1,8 @@
+<?php
+	ScriptLoader::LoadPLUGINSCSS('fancybox-master/dist/jquery.fancybox.min.css');
+	ScriptLoader::LoadPLUGINSJS('fancybox-master/dist/jquery.fancybox.min.js');
+?>
+
 <style type="text/css">
 	@media screen and (min-width: 768px) {
 		.bg-carousel { height: 500px }
@@ -98,7 +103,9 @@
 
 		<div class="hidden-xs hidden-sm hidden-md col-lg-7" style="height: 530px">
 			<div class="img-item" style="overflow: hidden; position: relative;">
-				<img src="http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg" class="Dyna img-responsive" alt="Foto Destaque Linha Dyna">
+				<a data-fancybox="dyna" href="http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg">
+					<img src="http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg" class="Dyna img-responsive" alt="Foto Destaque Linha Dyna">
+				</a>
 			</div>
 		</div>
 	</div>
