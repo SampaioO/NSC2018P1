@@ -119,21 +119,22 @@
         </center>
     </div>
     <div class="row" style="margin-bottom: 50px">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
-			<h4 class="text-left Geared-Slab Extra-Bold size14 Laranja-Fonte Uppercase" style="margin-bottom: 0">harley-davidson</h4>
-			<h2 class="text-left Geared-Slab Extra-Bold size3 Laranja-Fonte Uppercase" style="margin-top: 0">DYNA</h2>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+			<h4 style="font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 20px; color: #f9a61a; text-transform: uppercase">harley-davidson</h4>
+			<p style="font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 45px; margin-top: -10px !important; color: #f9a61a">DYNA</p>
 			
-			<div class="Open-Sans Light size14 Preto-Fonte">
+			<div class="Open-Sans Light size14 Preto-Fonte" style="text-align: justify; color: #4b4b4b">
 				<p>Uma das principais características das motocicletas da família Dyna é a suspensão traseira bichoque visível, que conecta a balança à caixa de marchas. Essa a diferença da família Softail que tem sua suspensão escondida sobre a caixa de marchas. A linha possui algumas customizações, dentre elas é possível citar a Dyna SuperGlide, SuperGlide Custom e a WideGlide.</p>
 				<p>Os quadros das motocicletas Dyna foram desenvolvidos entre os anos oitenta e começo dos anos noventa. O modelo de estreia dessa família foi a FXDB Sturgis (1991) que foi lançada como edição limitada. Em 1992, chega ao mercado a linha FXDB Daytona, também com edição limitada e um modelo de produção FXD Super Glide.</p>
 				<p>Os modelos Dyna utilizam o motor big-twin, garfos telescópicos de pequeno diâmetro, semelhantes aos utilizados na Sportster até 2012. Todos os modelos Dyna têm denominações que começam com FXD, por exemplo: FXDWG (Dyna Amplo Glide) e FXDL (Dyna Low Rider).</p>
 			</div>
 		</div>
 
-		<div class="hidden-xs hidden-sm hidden-md col-lg-7" style="height: 530px">
+		<div class="hidden-xs hidden-sm hidden-md col-lg-6" style="height: 530px">
 			<div class="img-item" style="overflow: hidden; position: relative;">
 				<a data-fancybox="dyna" href="http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg">
-					<img src="http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg" class="Dyna img-responsive" alt="Foto Destaque Linha Dyna">
+					<div style="background-color: #000000; height: 320px;"></div>
+					<div style="background: url('http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg'); border-radius: 15px; height: 320px; background-position: center center; background-size: cover; position: absolute; top: 0"></div>
 				</a>
 			</div>
 		</div>
