@@ -53,22 +53,36 @@
 			<p>A Club 1903 Motorcycles oferece modelos seminovos das linhas Sportster, Dyna, Softail, Touring, V-Rod. Na loja você também encontra diversos acessórios Harley Davidson, peças, vestuário, capacetes, luvas, viseiras e muito mais. Nossa missão é unir bons amigos para continuar buscando por aventuras cada vez melhores.</p>
 		</div>
 	</div>
-	<div class="row" style="padding-top: 25px; padding-bottom: 50px">
+	<div class="row" style="padding-top: 25px; padding-bottom: 100px">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<h3 style="color: #f9a61a; text-transform: uppercase; font-weight: 600; font-size: 44px; margin-left: 32px !important">Tour 360º</h3>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<div style="background: url('<?= RAIZSITE ?>/img/marcacao-auto-xv.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 265px; width: 100%"></div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="position: relative">
+			<div style="background-color: #000000; position: relative; height: 265px; border-radius: 15px; text-align: center">
+				<p style="text-transform: uppercase; color: #ffbc1b; font-size: 16px; padding-top: 11px">Alto da XV</p>
+			</div>
+
+			<div style="background: url('<?= RAIZSITE ?>/img/marcacao-auto-xv.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 265px; width: 450px; position: absolute; top: 45px"></div>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<div style="background: url('<?= RAIZSITE ?>/img/marcacao-distrito-1340.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 265px; width: 100%"></div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="position: relative">
+			<div style="background-color: #000000; position: relative; height: 265px; border-radius: 15px; text-align: center">
+				<p style="text-transform: uppercase; color: #ffbc1b; font-size: 16px; padding-top: 11px">Distrito 1340</p>
+			</div>
+
+			<div style="background: url('<?= RAIZSITE ?>/img/marcacao-distrito-1340.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 265px; width: 450px; position: absolute; top: 45px"></div>
 		</div>
 	</div>
 </div>
 
 <div class="container session-destaque">
 	<div class="row">
-		<div class="bg-destaque" style="background: url('<?= RAIZSITE ?>/img/marcacao-sessao-club.jpg'); background-position: center center; background-size: cover"></div>
+		<div class="bg-destaque" style="background: url('<?= RAIZSITE ?>/img/marcacao-sessao-club.jpg'); background-position: center center; background-size: cover; position: relative">
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 position-center-vertical" style="background-color: #25211a; border-top-left-radius: 15px; border-bottom-left-radius: 15px; position: absolute; right: 0; padding: 15px 15px">
+				<h3 style="color: #f9a61a; font-size: 30px">MOTO HARLEY-DAVIDSON<br>EM CURITIBA É NA CLUB 1903</h3>
+				<p style="font-family: 'Roboto', sans-serif; color: #ffffff; margin-top: 10px">Encontre a moto Harley Davidson que vai mudar a sua vida. Confira os modelos Sportster, Dyna, Softail, Touring, V-Rod e escolha o modelo que mais combina com o seu estilo de vida.</p>
+				<p style="font-family: 'Roboto', sans-serif; color: #ffffff">A estrada espera por você.</p>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -130,14 +144,10 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-zero">
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 chamada-marcas text-center">
-                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 padding-zero">
-                    <h4 class="Bold">AS MELHORES MARCAS<br>VOCÊ ENCONTRA AQUI</h4>
-                </div>
-                <div class="hidden-xs col-sm-2 col-md-2 col-lg-2 padding-zero">
-                </div>
+                <center><img src="<?= RAIZSITE ?>/img/marcacao-pin.png" class="img-responsive" style="height: 211px"></center>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
-                <div class="owl-carousel owl-theme" id="slideMarcas">
+                <div class="owl-carousel owl-theme" id="slideMarcas" style="margin-top: 80px">
                     <div class="item">
                         <img src="http://www.club1903motorcycles.com.br/2018/imagens/logo1.png" class="img-responsive center-block">
                     </div>
