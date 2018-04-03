@@ -38,6 +38,7 @@
 	<style type="text/css">
 		.row-harley-principal h1 { color: #f9a61a; text-transform: uppercase; font-weight: 600; font-size: 44px }
 		.row-harley-principal h2 { color: #4b4b4b; text-transform: uppercase; font-size: 29px }
+		.row-harley-conteudo .bloco-conteudo p { margin-bottom: 16px }
 
 		@media screen and (max-width: 767px) {}
 
@@ -164,6 +165,38 @@
 </div>
 
 <div class="container session-modelos">
+	<style type="text/css">
+		.list-inline a { font-family: 'Roboto'; font-weight: 200; color: #000000 }
+		.list-inline a:hover { color: #000000; border-bottom: 1px solid #000000 }
+
+		@media screen and (max-width: 768px) {
+			.session-modelos { background-color: #ffffff }
+			.session-modelos .list-inline { margin-top: 25px; margin-bottom: 40px; padding-top: 10px; padding-bottom: 10px }
+			.session-modelos .list-inline { background-color: #f7a600; border-radius: 10px }
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			.list-inline { height: 41px }
+			.list-inline a { font-size: 15px }
+			.list-inline>li { padding-right: 15px !important; padding-left: 15px !important }
+			.session-modelos .list-inline { margin-top: 25px; margin-bottom: 40px; padding-top: 10px; padding-bottom: 10px }
+			.session-modelos .list-inline { width: 500px; background-color: #f7a600; border-radius: 10px }
+		}
+		@media screen and (min-width: 992px) and (max-width: 1199px) {
+			.list-inline { height: 43px }
+			.list-inline a { font-size: 16.5px }
+			.list-inline>li { padding-right: 13px !important; padding-left: 13px !important }
+			.session-modelos .list-inline { margin-top: 25px; margin-bottom: 40px; padding-top: 10px; padding-bottom: 10px }
+			.session-modelos .list-inline { width: 500px; background-color: #f7a600; border-radius: 10px }
+		}
+		@media screen and (min-width: 1200px) {
+			.list-inline { height: 46px }
+			.list-inline a { font-size: 18px }
+			.list-inline>li { padding-right: 10px !important; padding-left: 10px !important }
+			.session-modelos .list-inline { margin-top: 25px; margin-bottom: 40px; padding-top: 10px; padding-bottom: 10px }
+			.session-modelos .list-inline { width: 500px; background-color: #f7a600; border-radius: 10px }
+		}
+	</style>
 	<div class="row">
 		<center id="categorias">
 	        <ul class="list-inline">
@@ -195,12 +228,17 @@
 			</ul>
         </center>
     </div>
+
+    <style type="text/css">
+	    .session-modelos .div-conteudo .conteudo { text-align: justify; color: #4b4b4b }
+	    .session-modelos .div-conteudo .conteudo p { margin-bottom: 16px }
+	</style>
     <div class="row" style="margin-bottom: 50px">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 div-conteudo">
 			<h4 style="font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 20px; color: #f9a61a; text-transform: uppercase">harley-davidson</h4>
 			<p style="font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 45px; margin-top: -10px !important; color: #f9a61a">DYNA</p>
 			
-			<div class="Open-Sans Light size14 Preto-Fonte" style="text-align: justify; color: #4b4b4b">
+			<div class="Open-Sans Light size14 Preto-Fonte conteudo">
 				<p>Uma das principais características das motocicletas da família Dyna é a suspensão traseira bichoque visível, que conecta a balança à caixa de marchas. Essa a diferença da família Softail que tem sua suspensão escondida sobre a caixa de marchas. A linha possui algumas customizações, dentre elas é possível citar a Dyna SuperGlide, SuperGlide Custom e a WideGlide.</p>
 				<p>Os quadros das motocicletas Dyna foram desenvolvidos entre os anos oitenta e começo dos anos noventa. O modelo de estreia dessa família foi a FXDB Sturgis (1991) que foi lançada como edição limitada. Em 1992, chega ao mercado a linha FXDB Daytona, também com edição limitada e um modelo de produção FXD Super Glide.</p>
 				<p>Os modelos Dyna utilizam o motor big-twin, garfos telescópicos de pequeno diâmetro, semelhantes aos utilizados na Sportster até 2012. Todos os modelos Dyna têm denominações que começam com FXD, por exemplo: FXDWG (Dyna Amplo Glide) e FXDL (Dyna Low Rider).</p>
@@ -208,24 +246,31 @@
 		</div>
 
 		<div class="hidden-xs hidden-sm hidden-md col-lg-6" style="height: 530px">
-			<div class="img-item" style="overflow: hidden; position: relative;">
-				<a data-fancybox="dyna" href="http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg">
-					<div style="background-color: #000000; height: 320px;"></div>
-					<div style="background: url('http://www.club1903motorcycles.com.br/cms/uploads/20160708092710_dyna_fat_bob.jpg'); border-radius: 15px; height: 320px; background-position: center center; background-size: cover; position: absolute; top: 0"></div>
-				</a>
-			</div>
 		</div>
 	</div>
 </div>
 
+<style type="text/css">
+	.chamada-marcas img { height: 211px }
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		#slideMarcas { margin-left: -50px }
+	}
+	@media screen and (min-width: 768px) {
+		#slideMarcas { margin-top: 80px }
+	}
+	@media screen and (max-width: 767px) {
+		.session-logos { background-color: #ffffff }
+	}
+</style>
 <div class="container session-logos">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-zero">
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 chamada-marcas text-center">
-                <center><img src="<?= RAIZSITE ?>/img/marcacao-pin.png" class="img-responsive" style="height: 211px"></center>
+                <center><img src="<?= RAIZSITE ?>/img/marcacao-pin.png" class="img-responsive"></center>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
-                <div class="owl-carousel owl-theme" id="slideMarcas" style="margin-top: 80px">
+                <div class="owl-carousel owl-theme" id="slideMarcas">
                     <div class="item">
                         <img src="http://www.club1903motorcycles.com.br/2018/imagens/logo1.png" class="img-responsive center-block">
                     </div>
@@ -254,7 +299,7 @@
 		    autoplay: true,
 		    responsive: {
 		    	0: {
-		    		items: 1
+		    		items: 2
 		    	},
 		    	768: {
 		    		items: 3
