@@ -189,6 +189,9 @@
 			.session-modelos .list-inline { margin-top: 25px; margin-bottom: 40px; padding-top: 10px; padding-bottom: 10px }
 			.session-modelos .list-inline { width: 500px; background-color: #f7a600; border-radius: 10px }
 		}
+		@media screen and (min-width: 768px) {
+			li .menu { cursor: pointer }
+		}
 		@media screen and (min-width: 1200px) {
 			.list-inline { height: 46px }
 			.list-inline a { font-size: 18px }
@@ -239,37 +242,91 @@
 	    .row-modelo .titulo-harley { font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 20px; color: #f9a61a; text-transform: uppercase }
 	    .row-modelo .subtitulo-harley { font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 45px; margin-top: -10px !important; color: #f9a61a }
 
-	    .btn-modelo { font-family: 'Roboto', sans-serif !important; font-weight: 700 !important }
+	    .btn-modelo { font-family: 'Roboto', sans-serif !important; font-weight: 700 !important; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
 	    .btn-modelo { bottom: 15px; background-color: #f7a600; border-radius: 8px; text-transform: uppercase; font-size: 18px; color: #000000; padding: 8px 25px !important }
+
+	    @media screen and (min-width: 768px) {
+	    	.row-modelo .div-tour { margin-top: 40px }
+
+	    	.row-modelo .div-tour .fundo { background-color: #000000; position: relative; height: 265px; border-radius: 15px; text-align: center }
+
+	    	.row-modelo .div-tour .fundo svg { cursor: pointer; position: absolute; top: 20px }
+	    	.row-modelo .div-tour .fundo svg:first-child { left: 25px }
+	    	.row-modelo .div-tour .fundo svg { right: 25px }
+
+	    	.row-modelo .div-tour .fundo p { font-family: 'Geared Slab'; text-transform: uppercase; color: #ffbc1b; font-size: 20px; padding-top: 18px }
+
+	    	.row-modelo .div-tour .owl-theme { position: absolute; top: 60px }
+	    	.row-modelo .div-tour .owl-theme .item div { background-size: cover !important; background-position: center center !important; border-radius: 15px; height: 285px; width: 450px }
+
+	    	.btn-modelo { z-index: 2 }
+	    	.btn-modelo:hover { border-color: #000000; background-color: transparent; color: #ffffff !important }
+	    }
+	    @media screen and (max-width: 767px) {
+	    	.btn-modelo { width: 100% }
+	    }
 	</style>
     <div class="row row-modelo">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 			<h4 class="titulo-harley">harley-davidson</h4>
 			<p class="subtitulo-harley">DYNA</p>
 			
-			<div class="Open-Sans Light size14 Preto-Fonte conteudo">
+			<div class="conteudo">
 				<p>Uma das principais características das motocicletas da família Dyna é a suspensão traseira bichoque visível, que conecta a balança à caixa de marchas. Essa a diferença da família Softail que tem sua suspensão escondida sobre a caixa de marchas. A linha possui algumas customizações, dentre elas é possível citar a Dyna SuperGlide, SuperGlide Custom e a WideGlide.</p>
 				<p>Os quadros das motocicletas Dyna foram desenvolvidos entre os anos oitenta e começo dos anos noventa. O modelo de estreia dessa família foi a FXDB Sturgis (1991) que foi lançada como edição limitada. Em 1992, chega ao mercado a linha FXDB Daytona, também com edição limitada e um modelo de produção FXD Super Glide.</p>
 				<p>Os modelos Dyna utilizam o motor big-twin, garfos telescópicos de pequeno diâmetro, semelhantes aos utilizados na Sportster até 2012. Todos os modelos Dyna têm denominações que começam com FXD, por exemplo: FXDWG (Dyna Amplo Glide) e FXDL (Dyna Low Rider).</p>
+
+				<a role="button" class="btn btn-modelo hidden-lg hidden-md hidden-sm" href="">Escolha a sua</a>
 			</div>
 		</div>
 
-		<div class="hidden-xs hidden-sm hidden-md col-lg-6 div-tour" style="margin-top: 40px">
-			<div class="fundo" style="background-color: #000000; position: relative; height: 265px; border-radius: 15px; text-align: center">
-				<svg class="rotate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357; position: absolute; top: 20px; left: 25px" xml:space="preserve"><g><g id="play-arrow"><polygon points="38.25,0 38.25,357 318.75,178.5   " fill="#f7a600"/></g></g></svg>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-6 div-tour">
+			<div class="fundo">
+				<svg class="rotate custom-prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357" xml:space="preserve"><g><g id="play-arrow"><polygon points="38.25,0 38.25,357 318.75,178.5   " fill="#f7a600"/></g></g></svg>
 
-				<p style="font-family: 'Geared Slab' !important; text-transform: uppercase; color: #ffbc1b; font-size: 20px; padding-top: 18px">Super glide custom</p>
+				<p>Super glide custom</p>
 
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357; position: absolute; top: 20px; right: 25px" xml:space="preserve"><g><g id="play-arrow"><polygon points="38.25,0 38.25,357 318.75,178.5   " fill="#f7a600"/></g></g></svg>
-
-				<div class="destaque hidden-lg hidden-md hidden-sm" style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 285px; position: absolute; width: 100%"></div>
+				<svg class="custom-next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357" xml:space="preserve"><g><g id="play-arrow"><polygon points="38.25,0 38.25,357 318.75,178.5   " fill="#f7a600"/></g></g></svg>
 			</div>
 
-			<div class="destaque hidden-xs" style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 285px; position: absolute; top: 60px">
-				<a role="button" class="btn btn-modelo position-center">Escolha a sua</a>
+			<div class="owl-carousel owl-theme" id="dyna">
+				<a href="<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg" data-fancybox="dyna">
+			        <div class="item">
+			        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg');"></div>
+					</div>
+				</a>
+
+				<a href="<?= RAIZSITE ?>/img/marcacao-modelo-sportster.jpg" data-fancybox="dyna">
+			        <div class="item">
+			        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-sportster.jpg');"></div>
+					</div>
+				</a>
 			</div>
+
+			<a role="button" class="btn btn-modelo position-center" style="bottom: -60px">Escolha a sua</a>
 		</div>
 	</div>
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	    	var owl = $('#dyna');
+
+	        owl.owlCarousel({
+	    	    loop: false,
+	    	    dots: false,
+	            nav: false,
+	    	    items: 1,
+	    	    autoplay: true
+	    	});
+
+	    	$('.custom-next').click(function() {
+			    owl.trigger('next.owl.carousel');
+			});
+
+			$('.custom-prev').click(function() {
+			    owl.trigger('prev.owl.carousel');
+			})
+	    });
+	</script>
 
 	<div class="row row-modelo">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
