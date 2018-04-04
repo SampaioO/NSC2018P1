@@ -5,6 +5,25 @@
 
 <style type="text/css">
 	@media screen and (min-width: 768px) {
+		html { overflow-x: hidden }
+	}
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		.background-alternativo { top: 659px }
+	}
+	@media screen and (min-width: 992px) and (max-width: 1199px) {
+		.background-alternativo { top: 599px }
+	}
+	@media screen and (min-width: 1200px) and (max-width: 1439px) {
+		.background-alternativo { top: 582px }
+	}
+	@media screen and (min-width: 1440px) {
+		.background-alternativo { top: 599px }
+	}
+</style>
+<img src="<?= RAIZSITE ?>/img/marcacao-background-interna.jpg" style="position: absolute; left: 0" class="hidden-xs background-alternativo">
+
+<style type="text/css">
+	@media screen and (min-width: 768px) {
 		.bg-carousel { height: 500px }
 		.session-banner,
 		.session-destaque,
@@ -40,7 +59,11 @@
 		.row-harley-principal h2 { color: #4b4b4b; text-transform: uppercase; font-size: 29px }
 		.row-harley-conteudo .bloco-conteudo p { margin-bottom: 16px }
 
-		@media screen and (max-width: 767px) {}
+		@media screen and (max-width: 767px) {
+			.session-conteudo { padding-top: 35px }
+			.session-conteudo h2 { padding: 30px 0px }
+			.row-harley-conteudo .bloco-conteudo { padding-bottom: 35px }
+		}
 
 		@media screen and (min-width: 768px) and (max-width: 991px) {}
 		@media screen and (min-width: 992px) and (max-width: 1199px) {}
@@ -84,17 +107,18 @@
 
 		@media screen and (min-width: 768px) and (max-width: 991px) {
 			.div-tour .destaque { width: 345px }
+			.div-tour .destaque { top: 45px }
 		}
 		@media screen and (min-width: 992px) and (max-width: 1199px) {}
 
 		@media screen and (min-width: 768px) {
 			.row-harley-tour { padding-top: 25px; padding-bottom: 100px }
 			.row-harley-tour h3 { margin-left: 32px !important }
-
-			.div-tour .destaque { top: 0; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
-			.div-tour:hover .destaque { top: 45px; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
 		}
 		@media screen and (min-width: 992px) {
+			.div-tour .destaque { top: 0; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
+			.div-tour:hover .destaque { top: 45px; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
+
 			.div-tour .destaque { width: 450px }
 		}
 		@media screen and (min-width: 1200px) {}
@@ -155,9 +179,10 @@
 <div class="container session-destaque">
 	<div class="row row-harley-destaque">
 		<div class="bg-destaque">
-			<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 position-center-vertical">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 position-center-vertical">
 				<h3>MOTO HARLEY-DAVIDSON<br>EM CURITIBA É NA CLUB 1903</h3>
-				<p>Encontre a moto Harley Davidson que vai mudar a sua vida. Confira os modelos Sportster, Dyna, Softail, Touring, V-Rod e escolha o modelo que mais combina com o seu estilo de vida.</p>
+				<p>Encontre a moto Harley Davidson que vai mudar a sua vida.<br>
+					Confira os modelos Sportster, Dyna, Softail, Touring, V-Rod<br>e escolha o modelo que mais combina com o seu estilo de vida.</p>
 				<p>A estrada espera por você.</p>
 			</div>
 		</div>
@@ -166,7 +191,7 @@
 
 <div class="container session-modelos">
 	<style type="text/css">
-		.list-inline a { font-family: 'Roboto'; font-weight: 200; color: #000000 }
+		.list-inline a { font-family: 'Roboto'; font-weight: 400; color: #000000 }
 		.list-inline a:hover { color: #000000; border-bottom: 1px solid #000000 }
 
 		@media screen and (max-width: 768px) {
@@ -204,27 +229,27 @@
 		<center id="categorias">
 	        <ul class="list-inline">
 				<li>
-					<a data-id="#Dyna-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
+					<a href="#DYNA-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
 						DYNA
 					</a>
 				</li>
 				<li>
-					<a data-id="#SPORTSTER-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
+					<a href="#SPORTSTER-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
 						SPORTSTER
 					</a>
 				</li>
 				<li>
-					<a data-id="#SOFTAIL-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
+					<a href="#SOFTAIL-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
 						SOFTAIL
 					</a>
 				</li>
 				<li>
-					<a data-id="#TOURING-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
+					<a href="#TOURING-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
 						TOURING
 					</a>
 				</li>
 				<li>
-					<a data-id="#V-ROD-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
+					<a href="#V-ROD-Harley" class="menu text-center Geared-Slab Extra-Bold size17 reseta-link Preto-Fonte">
 						V-ROD
 					</a>
 				</li>
@@ -238,17 +263,17 @@
 	    .row-modelo .conteudo { text-align: justify; color: #4b4b4b }
 	    .row-modelo .conteudo p { margin-bottom: 16px }
 
-	    .row-modelo { margin-bottom: 50px }
 	    .row-modelo .titulo-harley { font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 20px; color: #f9a61a; text-transform: uppercase }
 	    .row-modelo .subtitulo-harley { font-family: 'Geared Slab' !important; margin: 0 !important; font-size: 45px; margin-top: -10px !important; color: #f9a61a }
 
 	    .btn-modelo { font-family: 'Roboto', sans-serif !important; font-weight: 700 !important; -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out }
-	    .btn-modelo { bottom: 15px; background-color: #f7a600; border-radius: 8px; text-transform: uppercase; font-size: 18px; color: #000000; padding: 8px 25px !important }
+	    .btn-modelo { bottom: 15px; background-color: #f7a600; border-radius: 10px !important; text-transform: uppercase; font-size: 18px; color: #000000; padding: 8px 25px !important }
 
 	    @media screen and (min-width: 768px) {
+	    	.row-modelo { margin-bottom: 70px; }
 	    	.row-modelo .div-tour { margin-top: 40px }
 
-	    	.row-modelo .div-tour .fundo { background-color: #000000; position: relative; height: 265px; border-radius: 15px; text-align: center }
+	    	.row-modelo .div-tour .fundo { background-color: #000000; position: relative; border-radius: 15px; text-align: center }
 
 	    	.row-modelo .div-tour .fundo svg { cursor: pointer; position: absolute; top: 20px }
 	    	.row-modelo .div-tour .fundo svg:first-child { left: 25px }
@@ -257,17 +282,30 @@
 	    	.row-modelo .div-tour .fundo p { font-family: 'Geared Slab'; text-transform: uppercase; color: #ffbc1b; font-size: 20px; padding-top: 18px }
 
 	    	.row-modelo .div-tour .owl-theme { position: absolute; top: 60px }
-	    	.row-modelo .div-tour .owl-theme .item div { background-size: cover !important; background-position: center center !important; border-radius: 15px; height: 285px; width: 450px }
+	    	.row-modelo .div-tour .owl-theme .item div { background-size: cover !important; background-position: center center !important; border-radius: 15px; width: 450px }
 
 	    	.btn-modelo { z-index: 2 }
-	    	.btn-modelo:hover { border-color: #000000; background-color: transparent; color: #ffffff !important }
+	    	.btn-modelo:hover { border-color: #000000; color: #ffffff !important }
+
+	    	.owl-carousel .owl-stage-outer { border-radius: 15px }
+	    }
+	    @media screen and (min-width: 1200px) {
+	    	.row-modelo .div-tour .fundo { height: 346px }
+	    	.row-modelo .div-tour .owl-theme .item div { height: 285px }
 	    }
 	    @media screen and (max-width: 767px) {
 	    	.btn-modelo { width: 100% }
+	    	.row-modelo { margin-bottom: 50px }
+	    }
+
+	    @media screen and (min-width: 992px) and (max-width: 1199px) {
+	    	.row-modelo .div-tour .fundo { height: 363px }
+	    	.row-modelo .div-tour .owl-theme .item div { height: 303px }
 	    }
 	</style>
-    <div class="row row-modelo">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+
+    <div class="row row-modelo" id="DYNA-Harley">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			<h4 class="titulo-harley">harley-davidson</h4>
 			<p class="subtitulo-harley">DYNA</p>
 			
@@ -276,59 +314,96 @@
 				<p>Os quadros das motocicletas Dyna foram desenvolvidos entre os anos oitenta e começo dos anos noventa. O modelo de estreia dessa família foi a FXDB Sturgis (1991) que foi lançada como edição limitada. Em 1992, chega ao mercado a linha FXDB Daytona, também com edição limitada e um modelo de produção FXD Super Glide.</p>
 				<p>Os modelos Dyna utilizam o motor big-twin, garfos telescópicos de pequeno diâmetro, semelhantes aos utilizados na Sportster até 2012. Todos os modelos Dyna têm denominações que começam com FXD, por exemplo: FXDWG (Dyna Amplo Glide) e FXDL (Dyna Low Rider).</p>
 
-				<a role="button" class="btn btn-modelo hidden-lg hidden-md hidden-sm" href="">Escolha a sua</a>
+				<a role="button" class="btn btn-modelo hidden-lg hidden-md" href="">Escolha a sua</a>
 			</div>
 		</div>
 
-		<div class="hidden-xs hidden-sm hidden-md col-lg-6 div-tour">
+		<div class="hidden-xs hidden-sm col-lg-6 col-md-6 div-tour">
 			<div class="fundo">
 				<svg class="rotate custom-prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357" xml:space="preserve"><g><g id="play-arrow"><polygon points="38.25,0 38.25,357 318.75,178.5   " fill="#f7a600"/></g></g></svg>
 
-				<p>Super glide custom</p>
+				<p class="modelo-1">Super glide custom</p>
 
 				<svg class="custom-next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357" xml:space="preserve"><g><g id="play-arrow"><polygon points="38.25,0 38.25,357 318.75,178.5   " fill="#f7a600"/></g></g></svg>
+
+				<div class="owl-carousel owl-theme" id="dyna">
+					<a href="<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg" data-fancybox="dyna">
+				        <div class="item">
+				        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg');"></div>
+						</div>
+					</a>
+
+					<a href="<?= RAIZSITE ?>/img/marcacao-modelo-sportster.jpg" data-fancybox="dyna">
+				        <div class="item">
+				        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-sportster.jpg');"></div>
+						</div>
+					</a>
+
+					<a href="<?= RAIZSITE ?>/img/marcacao-modelo-softail.jpg" data-fancybox="dyna">
+				        <div class="item">
+				        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-softail.jpg');"></div>
+						</div>
+					</a>
+
+					<a href="<?= RAIZSITE ?>/img/marcacao-modelo-touring.jpg" data-fancybox="dyna">
+				        <div class="item">
+				        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-touring.jpg');"></div>
+						</div>
+					</a>
+
+					<a href="<?= RAIZSITE ?>/img/marcacao-modelo-v-rod.jpg" data-fancybox="dyna">
+				        <div class="item">
+				        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-v-rod.jpg');"></div>
+						</div>
+					</a>
+				</div>
+
+				<a role="button" class="btn btn-modelo position-center">Escolha a sua</a>
 			</div>
-
-			<div class="owl-carousel owl-theme" id="dyna">
-				<a href="<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg" data-fancybox="dyna">
-			        <div class="item">
-			        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-dyna.jpg');"></div>
-					</div>
-				</a>
-
-				<a href="<?= RAIZSITE ?>/img/marcacao-modelo-sportster.jpg" data-fancybox="dyna">
-			        <div class="item">
-			        	<div style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-sportster.jpg');"></div>
-					</div>
-				</a>
-			</div>
-
-			<a role="button" class="btn btn-modelo position-center" style="bottom: -60px">Escolha a sua</a>
 		</div>
 	</div>
 	<script type="text/javascript">
 	    $(document).ready(function() {
-	    	var owl = $('#dyna');
+	    	var owlModelo1 = $('#dyna');
 
-	        owl.owlCarousel({
-	    	    loop: false,
+	    	owlModelo1.on('changed.owl.carousel', function(ev1) {
+				if (!ev1.namespace) return
+				var carouselModelo1 = ev1.relatedTarget
+				
+				var currentValueModelo1 = carouselModelo1.current() + 1;
+				console.log(currentValueModelo1);
+
+				if(currentValueModelo1 == 1 || currentValueModelo1 == 4) {
+					$(".modelo-1").html("Super glide custom");
+				} else if(currentValueModelo1 == 5) {
+					$(".modelo-1").html("xl 1200");
+				} else if(currentValueModelo1 == 6) {
+					$(".modelo-1").html("Fat Boy special");
+				} else if(currentValueModelo1 == 7) {
+					$(".modelo-1").html("Electra glide ultra limited");
+				} else if(currentValueModelo1 == 8 || currentValueModelo1 == 3) {
+					$(".modelo-1").html("Night Rod Special");
+				}
+			}).owlCarousel({
+	    	    loop: true,
 	    	    dots: false,
 	            nav: false,
 	    	    items: 1,
-	    	    autoplay: true
+	    	    autoplay: true,
+	    	    autoplayTimeout:5000
 	    	});
 
 	    	$('.custom-next').click(function() {
-			    owl.trigger('next.owl.carousel');
+			    owlModelo1.trigger('next.owl.carousel');
 			});
 
 			$('.custom-prev').click(function() {
-			    owl.trigger('prev.owl.carousel');
+			    owlModelo1.trigger('prev.owl.carousel');
 			})
 	    });
 	</script>
 
-	<div class="row row-modelo">
+	<div class="row row-modelo" id="SPORTSTER-Harley">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 			<h4 class="titulo-harley">harley-davidson</h4>
 			<p class="subtitulo-harley">SPORTSTER</p>
@@ -361,7 +436,7 @@
 		</div>
 	</div>
 
-	<div class="row row-modelo">
+	<div class="row row-modelo" id="SOFTAIL-Harley">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 			<h4 class="titulo-harley">harley-davidson</h4>
 			<p class="subtitulo-harley">SOFTAIL</p>
@@ -394,7 +469,7 @@
 		</div>
 	</div>
 
-	<div class="row row-modelo">
+	<div class="row row-modelo" id="TOURING-Harley">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 			<h4 class="titulo-harley">harley-davidson</h4>
 			<p class="subtitulo-harley">TOURING</p>
@@ -427,7 +502,7 @@
 		</div>
 	</div>
 
-	<div class="row row-modelo">
+	<div class="row row-modelo" id="V-ROD-Harley">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 			<h4 class="titulo-harley">harley-davidson</h4>
 			<p class="subtitulo-harley">V-ROD</p>
@@ -462,6 +537,9 @@
 <style type="text/css">
 	.chamada-marcas img { height: 211px }
 
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		.session-logos { margin-top: -5px }
+	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		#slideMarcas { margin-left: -50px }
 	}
@@ -470,6 +548,7 @@
 	}
 	@media screen and (max-width: 767px) {
 		.session-logos { background-color: #ffffff }
+		.owl-carousel#slideMarcas { margin-bottom: 35px }
 	}
 </style>
 <div class="container session-logos">
@@ -519,4 +598,24 @@
 		    }
 		});
 	});
+
+	var larguraTela = $("html").innerWidth();
+	console.log(larguraTela);
+
+	var $doc = $('html, body');
+	if(larguraTela > 768) {
+		$('a.menu').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top-160
+		    }, 1000);
+		    return false;
+		});
+	} else {
+		$('a.menu').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top-50
+		    }, 1000);
+		    return false;
+		});
+	}
 </script>
