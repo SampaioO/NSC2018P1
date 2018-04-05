@@ -1,4 +1,6 @@
 <?php
+	ScriptLoader::LoadPLUGINSCSS('Hover-master/css/hover-min.css');
+
 	ScriptLoader::LoadPLUGINSCSS('fancybox-master/dist/jquery.fancybox.min.css');
 	ScriptLoader::LoadPLUGINSJS('fancybox-master/dist/jquery.fancybox.min.js');
 ?>
@@ -8,16 +10,16 @@
 		html { overflow-x: hidden }
 	}
 	@media screen and (min-width: 768px) and (max-width: 1200px) {
-		.background-alternativo { top: 659px }
+		.background-alternativo { top: 559px }
 	}
 	@media screen and (min-width: 992px) and (max-width: 1199px) {
-		.background-alternativo { top: 599px }
+		.background-alternativo { top: 499px }
 	}
 	@media screen and (min-width: 1200px) and (max-width: 1439px) {
-		.background-alternativo { top: 582px }
+		.background-alternativo { top: 482px }
 	}
 	@media screen and (min-width: 1440px) {
-		.background-alternativo { top: 599px }
+		.background-alternativo { top: 499px }
 	}
 </style>
 <img src="<?= RAIZSITE ?>/img/marcacao-background-interna.jpg" style="position: absolute; left: 0" class="hidden-xs background-alternativo">
@@ -159,6 +161,8 @@
 	.row-harley-destaque .bg-destaque h3 { color: #f9a61a; font-size: 30px }
 	.row-harley-destaque .bg-destaque p { font-family: 'Roboto', sans-serif; color: #ffffff }
 
+	.row-harley-destaque p { max-width: 407px }
+
 	@media screen and (max-width: 767px) {
 		.row-harley-destaque .bg-destaque { height: 270px }
 	}
@@ -181,8 +185,7 @@
 		<div class="bg-destaque">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 position-center-vertical">
 				<h3>MOTO HARLEY-DAVIDSON<br>EM CURITIBA É NA CLUB 1903</h3>
-				<p>Encontre a moto Harley Davidson que vai mudar a sua vida.<br>
-					Confira os modelos Sportster, Dyna, Softail, Touring, V-Rod<br>e escolha o modelo que mais combina com o seu estilo de vida.</p>
+				<p>Encontre a moto Harley Davidson que vai mudar a sua vida. Confira os modelos Sportster, Dyna, Softail, Touring, V-Rod e escolha o modelo que mais combina com o seu estilo de vida.</p>
 				<p>A estrada espera por você.</p>
 			</div>
 		</div>
@@ -285,7 +288,10 @@
 	    	.row-modelo .div-tour .owl-theme .item div { background-size: cover !important; background-position: center center !important; border-radius: 15px; width: 450px }
 
 	    	.btn-modelo { z-index: 2 }
+	    	/*
 	    	.btn-modelo:hover { border-color: #000000; color: #ffffff !important }
+	    	*/
+	    	.btn-modelo { left: 33% !important }
 
 	    	.owl-carousel .owl-stage-outer { border-radius: 15px }
 	    }
@@ -358,7 +364,7 @@
 					</a>
 				</div>
 
-				<a role="button" class="btn btn-modelo position-center">Escolha a sua</a>
+				<a role="button" class="btn btn-modelo position-center hvr-float">Escolha a sua</a>
 			</div>
 		</div>
 	</div>
@@ -431,7 +437,7 @@
 			</div>
 
 			<div class="destaque hidden-xs" style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-sportster.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 285px; position: absolute; top: 60px">
-				<a role="button" class="btn btn-modelo position-center">Escolha a sua</a>
+				<a role="button" class="btn btn-modelo position-center hvr-grow-rotate">Escolha a sua</a>
 			</div>
 		</div>
 	</div>
@@ -464,7 +470,7 @@
 			</div>
 
 			<div class="destaque hidden-xs" style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-softail.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 285px; position: absolute; top: 60px">
-				<a role="button" class="btn btn-modelo position-center">Escolha a sua</a>
+				<a role="button" class="btn btn-modelo position-center hvr-bounce-in">Escolha a sua</a>
 			</div>
 		</div>
 	</div>
@@ -497,7 +503,7 @@
 			</div>
 
 			<div class="destaque hidden-xs" style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-touring.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 285px; position: absolute; top: 60px">
-				<a role="button" class="btn btn-modelo position-center">Escolha a sua</a>
+				<a role="button" class="btn btn-modelo position-center hvr-pop">Escolha a sua</a>
 			</div>
 		</div>
 	</div>
@@ -528,7 +534,7 @@
 			</div>
 
 			<div class="destaque hidden-xs" style="background: url('<?= RAIZSITE ?>/img/marcacao-modelo-v-rod.jpg'); background-size: cover; background-position: center center; border-radius: 15px; height: 285px; position: absolute; top: 60px">
-				<a role="button" class="btn btn-modelo position-center">Escolha a sua</a>
+				<a role="button" class="btn btn-modelo position-center" style="left: 50% !important">Escolha a sua</a>
 			</div>
 		</div>
 	</div>
@@ -536,6 +542,22 @@
 
 <style type="text/css">
 	.chamada-marcas img { height: 211px }
+	.chamada-marcas img {
+		-webkit-animation-name: hvr-bob-float,hvr-bob;
+	    animation-name: hvr-bob-float,hvr-bob;
+	    -webkit-animation-duration: .3s,1.5s;
+	    animation-duration: .3s,1.5s;
+	    -webkit-animation-delay: 0s,.3s;
+	    animation-delay: 0s,.3s;
+	    -webkit-animation-timing-function: ease-out,ease-in-out;
+	    animation-timing-function: ease-out,ease-in-out;
+	    -webkit-animation-iteration-count: 1,infinite;
+	    animation-iteration-count: 1,infinite;
+	    -webkit-animation-fill-mode: forwards;
+	    animation-fill-mode: forwards;
+	    -webkit-animation-direction: normal,alternate;
+	    animation-direction: normal,alternate
+	}
 
 	@media screen and (min-width: 768px) and (max-width: 991px) {
 		.session-logos { margin-top: -5px }

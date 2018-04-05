@@ -286,8 +286,8 @@
     		</div>
     		<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
     			<ul class="nav navbar-nav destaques">
-                    <li class="Border telefone">ALTO DA XV<br><a href="tel:30290095"><span>41</span> 3029.0095</a></li>
-                    <li class="Border telefone">DISTRITO 1340<br><a href="tel:30290095"><span>41</span> 3029.0095</a></li>
+                    <li class="Border telefone">ALTO DA XV<br><a class="hvr-buzz-out" href="tel:30290095"><span>41</span> 3029.0095</a></li>
+                    <li class="Border telefone">DISTRITO 1340<br><a class="hvr-buzz-out" href="tel:30290095"><span>41</span> 3029.0095</a></li>
                 </ul>
     		</div>
     	</div>
@@ -295,11 +295,11 @@
     		<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">&nbsp;</div>
     		<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12 bloco-links padding-zero">
     			<ul class="nav navbar-nav">
-                    <li class="Border"><a href="">A Club</a></li>
+                    <li class="Border"><a href="<?= RAIZSITE ?>/harley-davidson-curitiba">A Club</a></li>
                     <li class="Border"><a href="">Motos</a></li>
                     <li class="Border"><a href="">Eventos</a></li>
                     <li class="Border"><a href="">Notícias</a></li>
-                    <li class="Border"><a href="#">Loja</a></li>
+                    <li class="Border"><a href="">Loja</a></li>
                     <li class="Border"><a href="">Contato</a></li>
                     <li class="hidden-xs"><div class="divisoria"></div></li>
                     <li class="Border"><a href="">Ofertas</a></li>
